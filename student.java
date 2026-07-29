@@ -3,7 +3,6 @@ public class student{
     {
         int id = 89;
         String name = "Bhavya";
-        String add = "234-house";
         int cles = 12;
         char div = 'F';
         int chem = 98;
