@@ -7,18 +7,15 @@ public class StringComppressor {
         System.out.print("Enter a String : ");
         String s = sc.nextLine();
         
-        // Safety check: if the user just hits Enter without typing anything
         if (s.isEmpty()) {
             sc.close();
             return;
         }
         
-        // Convert to lowercase so 'A' and 'a' are counted together
         s = s.toLowerCase();
         
         int count = 1;
         
-        // Loop through the string up to the second-to-last character
         for (int i = 0; i < s.length() - 1; i++) {
             if (s.charAt(i) == s.charAt(i + 1)) {
                 // Characters match, increase the streak
