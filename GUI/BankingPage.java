@@ -1,6 +1,18 @@
 import java.awt.*;
 import java.awt.event.*;
 
+class WithdrawlLimitation extends Exception{
+    public WithdrawlLimitation(String message){
+        super(message);
+    }
+}
+
+class DepositLimitation extends Exception{
+    public DepositLimitation(String message){
+        super(message);
+    }
+}
+
 public class BankingPage extends Frame implements ActionListener {
     Button b1, b2, b3, b4, b5, b6, b7, b8; 
     Dialog with, depo, balace, tf, ts;
@@ -148,6 +160,32 @@ public class BankingPage extends Frame implements ActionListener {
         tf.add(l8);
 
         setVisible(true);
+    }
+
+    public void withdrawl(double amount) throws WithdrawlLimitation{
+        if(amount > 20000){
+            throw new WithdrawlLimitation("Amount is more than sufficient");
+        }
+        else if(amount > balance){
+            System.out.println("Amount in account is insufficent !");
+        }
+        else{
+            balance = balance - amount;
+            System.out.println("Transaction completed !");
+        }
+    }
+
+    public void deposit(double amount) throws DepositLimitation{
+        if(amount > 20000){
+            throw new DepositLimitation("Amount is more than sufficient");
+        }
+        else if(amount > balance){
+            System.out.println("Amount in account is insufficent !");
+        }
+        else{
+            balance = balance + amount;
+            System.out.println("Transaction completed !");
+        }
     }
 
     public void actionPerformed(ActionEvent e) {
