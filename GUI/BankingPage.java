@@ -207,7 +207,7 @@ public class BankingPage extends Frame implements ActionListener {
         } else if (e.getSource() == b7) {
             depo.setVisible(true);
             ts.setVisible(true);
-        } else if (e.getSource() == b8) {
+        } else if (e.getSource() == b8) {                   
             balace.setVisible(false);
         }
     }
