@@ -25,6 +25,7 @@ public class BankingPage extends Frame implements ActionListener {
                                 Main page
         ----------------------------------------------------------------------
         */
+
         setSize(500, 500);
         setTitle("Banking Application");
         setLayout(null);
@@ -61,6 +62,7 @@ public class BankingPage extends Frame implements ActionListener {
                                 Withdrawl dialog box
         ----------------------------------------------------------------------
         */
+
         with = new Dialog(this, "Withdrawl", true);
         with.setSize(400, 260);
         with.setLayout(null);
@@ -88,6 +90,7 @@ public class BankingPage extends Frame implements ActionListener {
                                 Deposit dialog box
         ----------------------------------------------------------------------
         */
+
         depo = new Dialog(this, "Deposit", true);
         depo.setSize(400, 260);
         depo.setLayout(null);
@@ -115,6 +118,7 @@ public class BankingPage extends Frame implements ActionListener {
                                 Balance dialog box
         ----------------------------------------------------------------------
         */
+
         balace = new Dialog(this, "Balance", true);
         balace.setSize(360, 220);
         balace.setLayout(null);
@@ -138,6 +142,7 @@ public class BankingPage extends Frame implements ActionListener {
                                 Transaction pass dialog box
         ----------------------------------------------------------------------
         */
+
         ts = new Dialog(this, "Success", true);
         ts.setSize(300, 160);
         ts.setLayout(null);
@@ -151,6 +156,7 @@ public class BankingPage extends Frame implements ActionListener {
                                 Transaction fail dialog box
         ----------------------------------------------------------------------
         */
+       
         tf = new Dialog(this, "Failed", true);
         tf.setSize(300, 160);
         tf.setLayout(null);
