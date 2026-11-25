@@ -1,5 +1,3 @@
-// package Threaddss;
-
 class Thread1 implements Runnable{
     public void run(){
         try{
