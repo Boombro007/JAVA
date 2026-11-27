@@ -39,8 +39,7 @@ public class AreaServerMulti {
             System.out.println("New client connected ! ");
 
             ClientHandler ch = new ClientHandler(s);
-            ch.start();
-            ss.close();
-        }
+            ch.start(); 
+        }   
     }   
 }
